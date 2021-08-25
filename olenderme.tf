@@ -1,7 +1,3 @@
-provider "cloudflare" {
-  version = "~> 2.0"
-}
-
 resource "cloudflare_record" "A_grafana_olender_me_70407e2ba2931db234f5ec4636cacaea" {
   zone_id = "cc48edd90525ea1c42435ecc79d83b66"
   name    = "grafana"

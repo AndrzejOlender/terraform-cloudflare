@@ -1,7 +1,3 @@
-provider "cloudflare" {
-  version = "~> 2.0"
-}
-
 resource "cloudflare_record" "A_wojtasik_uk_50c925d74d9fc688021fee2e6d204212" {
   zone_id = "a8603a1ed9b1c515bc422b962a741036"
   name    = "wojtasik.uk"

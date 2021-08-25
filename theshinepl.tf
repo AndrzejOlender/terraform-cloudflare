@@ -1,7 +1,3 @@
-provider "cloudflare" {
-  version = "~> 2.0"
-}
-
 resource "cloudflare_record" "A_theshine_pl_563f2c57456a028a2006d5d741e1fc01" {
   zone_id = "ce13bad630dea52d3fe776172487b833"
   name    = "theshine.pl"

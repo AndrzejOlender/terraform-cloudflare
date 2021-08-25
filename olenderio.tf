@@ -1,7 +1,3 @@
-provider "cloudflare" {
-  version = "~> 2.0"
-}
-
 resource "cloudflare_record" "A_olender_io_3241deb5a27491a5f5756a25d091e39b" {
   zone_id = "dab8f099a595da90a93887a6b1984eb5"
   name    = "olender.io"

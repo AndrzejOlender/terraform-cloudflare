@@ -1,7 +1,3 @@
-provider "cloudflare" {
-  version = "~> 2.0"
-}
-
 resource "cloudflare_record" "A_theshine_shoes_ae66e7a4096aa1f44e8e52d8fc18ca40" {
   zone_id = "8eea52812262945fd5607bba53364999"
   name    = "theshine.shoes"
