@@ -5,4 +5,14 @@ terraform {
     }
   }
   required_version = ">= 0.13"
+  }
+  backend "remote" {
+    organization = "olender"
+
+    workspaces {
+      name = "terraform-hetzner"
+    }
+  }
 }
+
+
