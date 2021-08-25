@@ -1,7 +1,8 @@
 terraform {
   required_providers {
-    hcloud = {
-      source = "terraform-providers/cloudflare"
+    cloudflare = {
+      source = "cloudflare/cloudflare"
+      version = "~> 2.0"
     }
   }
   backend "remote" {
