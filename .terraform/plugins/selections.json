@@ -1,6 +1,0 @@
-{
-  "registry.terraform.io/cloudflare/cloudflare": {
-    "hash": "h1:bHqH6i2d6cvKcVPh4LE53JQsIHiFH95Ucr7u3l7oBeA=",
-    "version": "2.25.0"
-  }
-}
