@@ -10,7 +10,7 @@ terraform {
     organization = "olender"
 
     workspaces {
-      name = "abc"
+      name = "terraform-cloudflare"
     }
   }
 }
