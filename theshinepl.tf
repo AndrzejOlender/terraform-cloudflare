@@ -3,7 +3,7 @@ resource "cloudflare_record" "A_theshine_pl_563f2c57456a028a2006d5d741e1fc01" {
   name    = "theshine.pl"
   type    = "A"
   ttl     = "1"
-  proxied = "false"
+  proxied = "true"
   value   = "162.55.152.253"
 }
 
@@ -12,7 +12,7 @@ resource "cloudflare_record" "A_www_theshine_pl_3a02195bcca96e1e38cd0e862326c38a
   name    = "www"
   type    = "A"
   ttl     = "1"
-  proxied = "false"
+  proxied = "true"
   value   = "162.55.152.253"
 }
 
