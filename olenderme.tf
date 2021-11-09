@@ -7,6 +7,15 @@ resource "cloudflare_record" "A_grafana_olender_me_70407e2ba2931db234f5ec4636cac
   value   = "85.219.183.37"
 }
 
+resource "cloudflare_record" "A_argocd_olender_me_70407e2ba2531db234f5ec4636cacaea" {
+  zone_id = "cc48edd90525ea1c42435ecc79d83b66"
+  name    = "argocd"
+  type    = "A"
+  ttl     = "1"
+  proxied = "false"
+  value   = "85.219.183.37"
+}
+
 resource "cloudflare_record" "A_h_olender_me_2adb330ae30772aad6edd90e6f439105" {
   zone_id = "cc48edd90525ea1c42435ecc79d83b66"
   name    = "h"
@@ -19,15 +28,6 @@ resource "cloudflare_record" "A_h_olender_me_2adb330ae30772aad6edd90e6f439105" {
 resource "cloudflare_record" "A_home_olender_me_4826eff93cd0e884f59153cd3b4e6759" {
   zone_id = "cc48edd90525ea1c42435ecc79d83b66"
   name    = "home"
-  type    = "A"
-  ttl     = "1"
-  proxied = "false"
-  value   = "85.219.183.37"
-}
-
-resource "cloudflare_record" "A_argocd_olender_me_4826eff93cd0e884f59155cd3b4e6759" {
-  zone_id = "cc48edd90525ea1c42435ecc79d83b66"
-  name    = "argocd"
   type    = "A"
   ttl     = "1"
   proxied = "false"
