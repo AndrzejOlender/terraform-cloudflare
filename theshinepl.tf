@@ -4,7 +4,7 @@ resource "cloudflare_record" "A_theshine_pl_563f2c57456a028a2006d5d741e1fc01" {
   type    = "A"
   ttl     = "1"
   proxied = "true"
-  value   = "162.55.152.253"
+  value   = "85.219.183.37"
 }
 
 resource "cloudflare_record" "A_www_theshine_pl_3a02195bcca96e1e38cd0e862326c38a" {
@@ -13,7 +13,7 @@ resource "cloudflare_record" "A_www_theshine_pl_3a02195bcca96e1e38cd0e862326c38a
   type    = "A"
   ttl     = "1"
   proxied = "true"
-  value   = "162.55.152.253"
+  value   = "85.219.183.37"
 }
 
 resource "cloudflare_record" "MX_theshine_pl_4c088f0723436286cd85f3e04774ac89" {
