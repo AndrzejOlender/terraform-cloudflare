@@ -1,0 +1,18 @@
+resource "cloudflare_record" "A_sipb_pl_50c925d74d9fc688021fee2e6d204217" {
+  zone_id = "66a77f09e1ba43a2f4a496cfcf33c6d7"
+  name    = "sipb.pl"
+  type    = "A"
+  ttl     = "1"
+  proxied = "true"
+  value   = "85.219.183.37"
+}
+
+
+resource "cloudflare_record" "A_www_sipb_pl_eda5719077aa3c1530b7d12df2c8e642" {
+  zone_id = "66a77f09e1ba43a2f4a496cfcf33c6d7"
+  name    = "www"
+  type    = "A"
+  ttl     = "1"
+  proxied = "true"
+  value   = "85.219.183.37"
+}
