@@ -34,7 +34,7 @@ resource "cloudflare_record" "MX_sipb_pl_8ede02b9913ae57706b25a442d7c48f4" {
   ttl      = "1"
   proxied  = "false"
   priority = "1"
-  value    = "route1.mx.cloudflare.net"
+  value    = "route2.mx.cloudflare.net"
 }
 
 resource "cloudflare_record" "MX_sipb_pl_8ede6bb9913ae57706b25a442d7c48f4" {
@@ -44,7 +44,7 @@ resource "cloudflare_record" "MX_sipb_pl_8ede6bb9913ae57706b25a442d7c48f4" {
   ttl      = "1"
   proxied  = "false"
   priority = "1"
-  value    = "route1.mx.cloudflare.net"
+  value    = "route3.mx.cloudflare.net"
 }
 
 # resource "cloudflare_record" "MX_sipb_pl_eda5719077aa3c1530b7d12df2c8e642" {
