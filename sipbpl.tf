@@ -46,11 +46,12 @@ resource "cloudflare_record" "MX_sipb_pl_8ede6bb9913ae57706b25a442d7c48f4" {
   value    = "route3.mx.cloudflare.net"
 }
 
-resource "cloudflare_record" "TXT_www_sipb_pl_eda57190756a3c1530b7d12df2c8e642" {
+resource "cloudflare_record" "TXT_sipb_pl_eda57190756a3c1530b7d12df2c8e642" {
   zone_id = "66a77f09e1ba43a2f4a496cfcf33c6d7"
-  name    = "www"
+  name    = "sipb.pl"
   type    = "TXT"
   ttl     = "1"
   proxied = "false"
   value   = "v=spf1 include:_spf.mx.cloudflare.net ~all"
 }
+
