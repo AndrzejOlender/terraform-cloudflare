@@ -3,7 +3,7 @@ resource "cloudflare_record" "A_sipb_pl_50c925d74d9fc688021fee2e6d204217" {
   name    = "sipb.pl"
   type    = "A"
   ttl     = "1"
-  proxied = "true"
+  proxied = "false"
   value   = "85.219.183.37"
 }
 
@@ -12,7 +12,7 @@ resource "cloudflare_record" "A_www_sipb_pl_eda5719077aa3c1530b7d12df2c8e642" {
   name    = "www"
   type    = "A"
   ttl     = "1"
-  proxied = "true"
+  proxied = "false"
   value   = "85.219.183.37"
 }
 
