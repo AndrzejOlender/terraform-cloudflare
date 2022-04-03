@@ -43,3 +43,4 @@ resource "cloudflare_record" "TXT_theshine_shoes_e18920c7cda7a129b51fc7ef1785738
   proxied = "false"
   value   = "google-site-verification=PvbvxYDbH7N4pGChDr4lqKiKQfnI9-WjWO2B8Ij6xRE"
 }
+
