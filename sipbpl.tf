@@ -4,7 +4,7 @@ resource "cloudflare_record" "A_sipb_pl_50c925d74d9fc688021fee2e6d204217" {
   type    = "A"
   ttl     = "1"
   proxied = "false"
-  value   = "85.219.183.37"
+  value   = "167.235.104.65"
 }
 
 resource "cloudflare_record" "A_www_sipb_pl_eda5719077aa3c1530b7d12df2c8e642" {
@@ -13,7 +13,7 @@ resource "cloudflare_record" "A_www_sipb_pl_eda5719077aa3c1530b7d12df2c8e642" {
   type    = "A"
   ttl     = "1"
   proxied = "false"
-  value   = "85.219.183.37"
+  value   = "167.235.104.65"
 }
 
 resource "cloudflare_record" "MX_sipb_pl_8ede0bb9913ae57706b25a442d7c48f4" {
