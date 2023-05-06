@@ -66,7 +66,7 @@ resource "cloudflare_record" "A_www_olender_me_12ef522172807b3535cd212304979166"
   name    = "thanos"
   type    = "A"
   ttl     = "1"
-  proxied = "true"
+  proxied = "false"
   value   = "89.174.154.32"
 }
 
