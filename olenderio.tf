@@ -22,7 +22,7 @@ resource "cloudflare_record" "A_argocd_olender_io_12ef522394407b2535cd2123049771
   type    = "A"
   ttl     = "1"
   proxied = "false"
-  value   = "167.235.104.65"
+  value   = "167.235.106.124"
 }
 
 resource "cloudflare_record" "A_argocd_olender_io_12ef542394407b2535cd412304977146" {
