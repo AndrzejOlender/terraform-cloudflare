@@ -38,3 +38,4 @@ resource "aws_s3_bucket" "k3s-nuc" {
   bucket = "k3s-nuc"
 }
 
+
