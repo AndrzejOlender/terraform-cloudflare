@@ -22,10 +22,6 @@ resource "aws_s3_bucket" "k3s-hetzner-thanos" {
   bucket = "k3s-hetzner-thanos"
 }
 
-resource "aws_s3_bucket" "k3s-loki" {
-  bucket = "k3s-loki"
-}
-
 resource "aws_s3_bucket" "k3s-loki-hetzner" {
   bucket = "k3s-loki-hetzner"
 }
