@@ -11,5 +11,30 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "cloudflare-bucket" {
+  bucket = "arsen-kubernetes"
+}
+
+resource "aws_s3_bucket" "cloudflare-bucket" {
+  bucket = "k3s-hetzner"
+}
+
+resource "aws_s3_bucket" "cloudflare-bucket" {
   bucket = "k3s-hetzner-thanos"
 }
+
+resource "aws_s3_bucket" "cloudflare-bucket" {
+  bucket = "k3s-loki"
+}
+
+resource "aws_s3_bucket" "cloudflare-bucket" {
+  bucket = "k3s-loki-hetzner"
+}
+
+resource "aws_s3_bucket" "cloudflare-bucket" {
+  bucket = "k3s-loki-nuc"
+}
+
+resource "aws_s3_bucket" "cloudflare-bucket" {
+  bucket = "k3s-nuc"
+}
+
