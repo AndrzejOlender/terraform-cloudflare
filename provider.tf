@@ -5,6 +5,10 @@ terraform {
       source = "cloudflare/cloudflare"
       version = "4.4.0"
     }
+    aws = {
+      source = "hashicorp/aws"
+      version = "4.20.1"
+    }
   }
   backend "remote" {
     organization = "olender"
