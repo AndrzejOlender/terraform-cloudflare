@@ -40,7 +40,7 @@ resource "cloudflare_record" "A_argocd_olender_io_12ef542394407b2535c34123049771
   type    = "A"
   ttl     = "1"
   proxied = "false"
-  value   = "167.233.12.20"
+  value   = "167.233.13.37"
 }
 
 resource "cloudflare_record" "A_argocd_olender_io_12ef542394407b3535c3412304977146" {
@@ -49,7 +49,7 @@ resource "cloudflare_record" "A_argocd_olender_io_12ef542394407b3535c34123049771
   type    = "A"
   ttl     = "1"
   proxied = "false"
-  value   = "167.233.12.20"
+  value   = "167.233.13.37"
 }
 
 resource "cloudflare_record" "MX_olender_io_8ede0bb9917ae57706b25a442d7c48f4" {
