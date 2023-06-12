@@ -34,7 +34,7 @@ resource "cloudflare_record" "A_argocd_olender_io_12ef542394407b2535cd4123049771
   value   = "167.235.106.124"
 }
 
-resource "cloudflare_record" "A_argocd_olender_io_12ef542394407b2535cd412304977146" {
+resource "cloudflare_record" "A_argocd_olender_io_12ef542394407b2535c3412304977146" {
   zone_id = "dab8f099a595da90a93887a6b1984eb5"
   name    = "httpbin"
   type    = "A"
