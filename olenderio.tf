@@ -43,7 +43,7 @@ resource "cloudflare_record" "A_argocd_olender_io_12ef542394407b2535c34123049771
   value   = "167.235.105.125"
 }
 
-zone_id  = "dab8f099a595da90a93887a6b1984eb5"
+zone_id  = "dab8f099a595da90a93887a6b1984eb5" {
   name     = "olender.io"
   type     = "MX"
   ttl      = "1"
@@ -51,7 +51,6 @@ zone_id  = "dab8f099a595da90a93887a6b1984eb5"
   priority = "1"
   value    = "ASPMX.L.GOOGLE.COM"
 }
-
 
 resource "cloudflare_record" "TXT_olender_io_7731ed366b8b3c4b85f999bce473556e" {
   zone_id = "dab8f099a595da90a93887a6b1984eb5"
