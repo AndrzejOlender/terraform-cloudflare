@@ -43,7 +43,8 @@ resource "cloudflare_record" "A_argocd_olender_io_12ef542394407b2535c32123049771
   value   = "167.235.105.125"
 }
 
-zone_id  = "dab8f099a595da90a93887a6b1984eb5" "MX_olender_io_8ede0bb9917ae57706b25a442d7c48f4" {
+resource "cloudflare_record" "MX_olender_io_8ede0bb9917ae57706b25a442d7c48f4" {
+  zone_id  = "dab8f099a595da90a93887a6b1984eb5"
   name     = "olender.io"
   type     = "MX"
   ttl      = "1"
