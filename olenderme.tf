@@ -39,7 +39,7 @@ resource "cloudflare_record" "A_www_olender_me_12ef522192807b2535nd212304977166"
   name    = "unifi"
   type    = "A"
   ttl     = "1"
-  proxied = "true"
+  proxied = "false"
   value   = "89.174.154.32"
 }
 
