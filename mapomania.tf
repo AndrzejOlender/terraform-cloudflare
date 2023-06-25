@@ -1,6 +1,6 @@
 resource "cloudflare_record" "A_mapomania_pl_3241deb5a27491a5f5756a25d091e39b" {
   zone_id = "9da2dc35a5686b411ecf555dfc2ccb14"
-  name    = "mapomania.io"
+  name    = "mapomania.pl"
   type    = "A"
   ttl     = "1"
   proxied = "false"
@@ -18,7 +18,7 @@ resource "cloudflare_record" "A_www_mapomania_pl_12ef522194807b2535cd21230497714
 
 resource "cloudflare_record" "MX_mapomania_pl_8ede0bb9917ae57706b25a442d7c48f4" {
   zone_id  = "9da2dc35a5686b411ecf555dfc2ccb14"
-  name     = "mapomania.io"
+  name     = "mapomania.pl"
   type     = "MX"
   ttl      = "1"
   proxied  = "false"
@@ -28,7 +28,7 @@ resource "cloudflare_record" "MX_mapomania_pl_8ede0bb9917ae57706b25a442d7c48f4" 
 
 resource "cloudflare_record" "TXT_mapomania_pl_7731ed366b8b3c4b85f999bce473556e" {
   zone_id = "9da2dc35a5686b411ecf555dfc2ccb14"
-  name    = "mapomania.io"
+  name    = "mapomania.pl"
   type    = "TXT"
   ttl     = "1"
   proxied = "false"
@@ -37,7 +37,7 @@ resource "cloudflare_record" "TXT_mapomania_pl_7731ed366b8b3c4b85f999bce473556e"
 
 resource "cloudflare_record" "TXT_mapomania_pl_7731ed366b8b324b85f999bce473556e" {
   zone_id = "9da2dc35a5686b411ecf555dfc2ccb14"
-  name    = "mapomania.io"
+  name    = "mapomania.pl"
   type    = "TXT"
   ttl     = "1"
   proxied = "false"
