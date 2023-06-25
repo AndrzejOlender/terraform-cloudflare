@@ -34,6 +34,15 @@ resource "cloudflare_record" "A_www_olender_me_12ef522192807b2535cd212304977166"
   value   = "89.174.154.32"
 }
 
+resource "cloudflare_record" "A_www_olender_me_12ef522192807b2535nd212304977166" {
+  zone_id = "cc48edd90525ea1c42435ecc79d83b66"
+  name    = "unifi"
+  type    = "A"
+  ttl     = "1"
+  proxied = "false"
+  value   = "89.174.154.32"
+}
+
 resource "cloudflare_record" "A_www_olender_me_12ef522192807b3535cd212304977166" {
   zone_id = "cc48edd90525ea1c42435ecc79d83b66"
   name    = "loki"
