@@ -35,13 +35,4 @@ resource "cloudflare_record" "TXT_mapomania_pl_7731ed366b8b3c4b85f999bce473556e"
   value   = "v=spf1 mx a include:_spf.emaillabs.net.pl ~all"
 }
 
-resource "cloudflare_record" "TXT_mapomania_pl_7731ed366b8b324b85f999bce473556e" {
-  zone_id = "9da2dc35a5686b411ecf555dfc2ccb14"
-  name    = "mapomania.pl"
-  type    = "TXT"
-  ttl     = "1"
-  proxied = "false"
-  value   = "google-site-verification=nTsnlmREGdwd4AHLl-9OMG6AifRyjtkhxREWTnsFBZM"
-}
-
 
