@@ -86,8 +86,7 @@ resource "cloudflare_record" "MX_olender_me_8ede0bb9917ae57706b25a442d7c48f4" {
   ttl      = "1"
   proxied  = "false"
   priority = "1"
-  # value    = "ASPMX.L.GOOGLE.COM"
-  value    = "ASPMX.L.GOOGLE.COM"
+  value    = "aspmx.l.google.com"
 }
 
 resource "cloudflare_record" "TXT_olender_me_7731ed366b8b3c4b85f999bce473556e" {
