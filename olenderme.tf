@@ -22,7 +22,7 @@ resource "cloudflare_record" "A_www_olender_me_12ef522194807b2535cd212304977146"
   type    = "A"
   ttl     = "1"
   proxied = "true"
-  value   = "89.174.154.32"
+  value   = "162.55.156.251"
 }
 
 resource "cloudflare_record" "A_www_olender_me_12ef522192807b2535cd212304977166" {
@@ -31,7 +31,7 @@ resource "cloudflare_record" "A_www_olender_me_12ef522192807b2535cd212304977166"
   type    = "A"
   ttl     = "1"
   proxied = "true"
-  value   = "89.174.154.32"
+  value   = "162.55.156.251"
 }
 
 resource "cloudflare_record" "A_www_olender_me_12ef522192807b2535nd212304977166" {
