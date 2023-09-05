@@ -38,4 +38,7 @@ resource "aws_s3_bucket" "k3s-mastodon" {
   bucket = "k3s-mastodon"
 }
 
+resource "aws_s3_bucket" "k3s-nuc-longhorn" {
+  bucket = "k3s-nuc-longhorn"
+}
 
