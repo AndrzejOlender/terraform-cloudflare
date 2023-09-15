@@ -4,7 +4,7 @@ resource "cloudflare_record" "A_mapomania_pl_3241deb5a27491a5f5756a25d091e39b" {
   type    = "A"
   ttl     = "1"
   proxied = "false"
-  value   = "162.55.157.13"
+  value   = "167.233.15.159"
 }
 
 resource "cloudflare_record" "A_www_mapomania_pl_12ef522194807b2535cd212304977146" {
@@ -13,7 +13,7 @@ resource "cloudflare_record" "A_www_mapomania_pl_12ef522194807b2535cd21230497714
   type    = "A"
   ttl     = "1"
   proxied = "false"
-  value   = "162.55.157.13"
+  value   = "167.233.15.159"
 }
 
 resource "cloudflare_record" "MX_mapomania_pl_8ede0bb9917ae57706b25a442d7c48f4" {
