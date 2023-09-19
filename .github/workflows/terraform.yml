@@ -9,7 +9,7 @@ on:
 jobs:
   terraform:
     name: 'Terraform'
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     environment: production
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
@@ -21,6 +21,11 @@ jobs:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v2
+    # install node
+    - name: Setup Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
 
     # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
     - name: Setup Terraform
