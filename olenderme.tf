@@ -12,7 +12,7 @@ resource "cloudflare_record" "A_olender_me_3241deb5a27491a5f5756a25d091e39b" {
   name    = "olender.me"
   type    = "A"
   ttl     = "1"
-  proxied = "false"
+  proxied = "true"
   value   = "89.174.154.32"
 }
 
@@ -22,69 +22,6 @@ resource "cloudflare_record" "A_www_olender_me_12ef522194807b2535cd212304977146"
   type    = "A"
   ttl     = "1"
   proxied = "true"
-  value   = "89.174.154.32"
-}
-
-resource "cloudflare_record" "A_www_olender_me_12ef522192807b2535cd212304977166" {
-  zone_id = "cc48edd90525ea1c42435ecc79d83b66"
-  name    = "kiali"
-  type    = "A"
-  ttl     = "1"
-  proxied = "true"
-  value   = "89.174.154.32"
-}
-
-resource "cloudflare_record" "A_www_olender_me_12ef522192807b52535cd212304977166" {
-  zone_id = "cc48edd90525ea1c42435ecc79d83b66"
-  name    = "social"
-  type    = "A"
-  ttl     = "1"
-  proxied = "false"
-  value   = "89.174.154.32"
-}
-
-resource "cloudflare_record" "A_www_olender_me_12ef522192807b2535nd212304977166" {
-  zone_id = "cc48edd90525ea1c42435ecc79d83b66"
-  name    = "unifi"
-  type    = "A"
-  ttl     = "1"
-  proxied = "false"
-  value   = "89.174.154.32"
-}
-
-resource "cloudflare_record" "A_www_olender_me_12ef522192807b3535cd212304977166" {
-  zone_id = "cc48edd90525ea1c42435ecc79d83b66"
-  name    = "loki"
-  type    = "A"
-  ttl     = "1"
-  proxied = "true"
-  value   = "89.174.154.32"
-}
-
-resource "cloudflare_record" "A_www_olender_me_12ef522142807b3535cd212304977166" {
-  zone_id = "cc48edd90525ea1c42435ecc79d83b66"
-  name    = "prometheus"
-  type    = "A"
-  ttl     = "1"
-  proxied = "true"
-  value   = "89.174.154.32"
-}
-
-resource "cloudflare_record" "A_www_olender_me_12ef522172807b3535cd212304977166" {
-  zone_id = "cc48edd90525ea1c42435ecc79d83b66"
-  name    = "tempo"
-  type    = "A"
-  ttl     = "1"
-  proxied = "true"
-  value   = "89.174.154.32"
-}
-
-resource "cloudflare_record" "A_www_olender_me_12ef522172807b3535cd212304979166" {
-  zone_id = "cc48edd90525ea1c42435ecc79d83b66"
-  name    = "thanos"
-  type    = "A"
-  ttl     = "1"
-  proxied = "false"
   value   = "89.174.154.32"
 }
 
