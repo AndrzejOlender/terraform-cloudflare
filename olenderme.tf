@@ -7,6 +7,15 @@ resource "cloudflare_record" "A_home_olender_me_4826eff93cd0e884f59153cd3b4e6759
   value   = "89.174.154.32"
 }
 
+resource "cloudflare_record" "A_home_olender_me_4826e5f93cd0e884f591534d3b4e6759" {
+  zone_id = "cc48edd90525ea1c42435ecc79d83b66"
+  name    = "minio"
+  type    = "A"
+  ttl     = "1"
+  proxied = "false"
+  value   = "89.174.154.32"
+}
+
 resource "cloudflare_record" "A_olender_me_3241deb5a27491a5f5756a25d091e39b" {
   zone_id = "cc48edd90525ea1c42435ecc79d83b66"
   name    = "olender.me"
