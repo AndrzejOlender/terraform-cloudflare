@@ -7,9 +7,9 @@ resource "cloudflare_record" "A_home_olender_me_4826eff93cd0e884f59153cd3b4e6759
   value   = "89.174.154.32"
 }
 
-resource "cloudflare_record" "A_home_olender_me_4826e5f93cd0e884f591534d3b4e6759" {
+resource "cloudflare_record" "A_home_olender_me_4826egh93cd0e884f59153cd3b4e6759" {
   zone_id = "cc48edd90525ea1c42435ecc79d83b66"
-  name    = "minio"
+  name    = "s"
   type    = "A"
   ttl     = "1"
   proxied = "false"
