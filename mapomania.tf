@@ -3,7 +3,7 @@ resource "cloudflare_record" "A_mapomania_pl_3241deb5a27491a5f5756a25d091e39b" {
   name    = "mapomania.pl"
   type    = "A"
   ttl     = "1"
-  proxied = "false"
+  proxied = "true"
   value   = "89.174.154.32"
 }
 
@@ -12,7 +12,7 @@ resource "cloudflare_record" "A_www_mapomania_pl_12ef522194807b2535cd21230497714
   name    = "www"
   type    = "A"
   ttl     = "1"
-  proxied = "false"
+  proxied = "true"
   value   = "89.174.154.32"
 }
 

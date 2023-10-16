@@ -3,7 +3,7 @@ resource "cloudflare_record" "A_home_olender_me_4826eff93cd0e884f59153cd3b4e6759
   name    = "home"
   type    = "A"
   ttl     = "1"
-  proxied = "false"
+  proxied = "true"
   value   = "89.174.154.32"
 }
 
@@ -12,7 +12,7 @@ resource "cloudflare_record" "A_home_olender_me_4826egh93cd0e884f59153cd3b4e6759
   name    = "s"
   type    = "A"
   ttl     = "1"
-  proxied = "false"
+  proxied = "true"
   value   = "89.174.154.32"
 }
 
