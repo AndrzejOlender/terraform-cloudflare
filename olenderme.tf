@@ -52,3 +52,13 @@ resource "cloudflare_record" "TXT_olender_me_7731ed366b8b3c4b85f999bce473556e" {
   proxied = "false"
   value   = "v=spf1 mx a include:_spf.emaillabs.net.pl ~all"
 }
+
+resource "cloudflare_record" "TXT_olender_me_7731ed366b8b3c4b85f999bc4473556e" {
+  zone_id = "cc48edd90525ea1c42435ecc79d83b66"
+  name    = "dns"
+  type    = "TXT"
+  ttl     = "1"
+  proxied = "false"
+  value   = "_acme-challenge.dns.olender.me"
+}
+
