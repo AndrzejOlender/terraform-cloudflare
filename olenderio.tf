@@ -34,6 +34,15 @@ resource "cloudflare_record" "A_argocd_olender_io_12ef4223f4407b2535cd2123049771
   value   = "89.174.154.32"
 }
 
+resource "cloudflare_record" "A_grafana_olender_io_12ef422324407b2535cd212304977146" {
+  zone_id = "dab8f099a595da90a93887a6b1984eb5"
+  name    = "grafana"
+  type    = "A"
+  ttl     = "1"
+  proxied = "true"
+  value   = "89.174.154.32"
+}
+
 resource "cloudflare_record" "A_argocd_olender_io_12eg6223f4407b2535cd212304977146" {
   zone_id = "dab8f099a595da90a93887a6b1984eb5"
   name    = "shlink"
