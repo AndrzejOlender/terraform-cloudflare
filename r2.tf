@@ -27,8 +27,8 @@ resource "aws_s3_bucket" "k3s-nuc" {
   bucket = "k3s-nuc"
 }
 
-resource "aws_s3_bucket" "k3s-nuc" {
-  bucket = "k3s-nuc-volumeSnapshots"
+resource "aws_s3_bucket" "k3s-nuc-volumesnapshots" {
+  bucket = "k3s-nuc-volumesnapshots"
 }
 
 resource "aws_s3_bucket" "k3s-mastodon" {
