@@ -14,9 +14,20 @@ resource "aws_s3_bucket" "arsen-kubernetes" {
   bucket = "arsen-kubernetes"
 }
 
+resource "aws_s3_bucket" "k3s-hetzner" {
+  bucket = "k3s-hetzner"
+}
+
+resource "aws_s3_bucket" "k3s-hetzner-thanos" {
+  bucket = "k3s-hetzner-thanos"
+}
 
 resource "aws_s3_bucket" "k3s-nuc-thanos" {
   bucket = "k3s-nuc-thanos"
+}
+
+resource "aws_s3_bucket" "k3s-loki-hetzner" {
+  bucket = "k3s-loki-hetzner"
 }
 
 resource "aws_s3_bucket" "k3s-loki-nuc" {
