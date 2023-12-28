@@ -34,6 +34,10 @@ resource "aws_s3_bucket" "k3s-loki-nuc" {
   bucket = "k3s-loki-nuc"
 }
 
+resource "aws_s3_bucket" "k3s-thanos-nuc" {
+  bucket = "k3s-thanos-nuc"
+}
+
 resource "aws_s3_bucket" "k3s-nuc" {
   bucket = "k3s-nuc"
 }
