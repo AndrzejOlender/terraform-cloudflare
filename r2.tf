@@ -46,6 +46,10 @@ resource "aws_s3_bucket" "k3s-nuc-volumesnapshots" {
   bucket = "k3s-nuc-volumesnapshots"
 }
 
+resource "aws_s3_bucket" "k3s-nuc-mariadb-backups" {
+  bucket = "k3s-nuc-mariadb-backups"
+}
+
 resource "aws_s3_bucket" "k3s-mastodon" {
   bucket = "k3s-mastodon"
 }
