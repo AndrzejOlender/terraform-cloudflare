@@ -91,6 +91,15 @@ resource "cloudflare_record" "TXT_olender_io_7731fd466b8b3c4b85f999bce473556e" {
   value   = "v=spf1 include:mailgun.org ~all"
 }
 
+resource "cloudflare_record" "TXT_olender_io_dkim" {
+  zone_id = "dab8f099a595da90a93887a6b1984eb5"
+  name    = "olender.io"
+  type    = "TXT"
+  ttl     = "1"
+  proxied = "false"
+  value   = "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC2WV8u5GqBh+UmDWraiWx7I/strQdzaR5XdcHhXzRDt2vOQ8s5MRLwMfad95dMKMMIv1GtmyHsR3mbMNO0evX+mxqcZ5Ok2EeGy2bnrhjEXug7AgjcpXFrljZR5G4eyZ/i33y+YIdL19uRlsIR3e4wYr7bHUERygwYCrFXf8j06wIDAQAB"
+}
+
 resource "cloudflare_record" "TXT_olender_io_7731ed366b8b324b85f999bce473556e" {
   zone_id = "dab8f099a595da90a93887a6b1984eb5"
   name    = "olender.io"
