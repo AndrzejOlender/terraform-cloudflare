@@ -53,6 +53,26 @@ resource "cloudflare_record" "MX_olender_io_8ede0bb9917ae57706b25a442d7c48f4" {
   value    = "aspmx.l.google.com"
 }
 
+resource "cloudflare_record" "MX_olender_io_8ede0bb99g7ae57706b25a442d7c48f4" {
+  zone_id  = "dab8f099a595da90a93887a6b1984eb5"
+  name     = "olender.io"
+  type     = "MX"
+  ttl      = "1"
+  proxied  = "false"
+  priority = "10"
+  value    = "mxa.eu.mailgun.org"
+}
+
+resource "cloudflare_record" "MX_olender_io_8ede0bb99g7ae57706b25a442d7g48f4" {
+  zone_id  = "dab8f099a595da90a93887a6b1984eb5"
+  name     = "olender.io"
+  type     = "MX"
+  ttl      = "1"
+  proxied  = "false"
+  priority = "10"
+  value    = "mxb.eu.mailgun.org"
+}
+
 resource "cloudflare_record" "TXT_olender_io_7731ed366b8b3c4b85f999bce473556e" {
   zone_id = "dab8f099a595da90a93887a6b1984eb5"
   name    = "olender.io"
@@ -60,6 +80,15 @@ resource "cloudflare_record" "TXT_olender_io_7731ed366b8b3c4b85f999bce473556e" {
   ttl     = "1"
   proxied = "false"
   value   = "v=spf1 mx a include:_spf.emaillabs.net.pl ~all"
+}
+
+resource "cloudflare_record" "TXT_olender_io_7731fd466b8b3c4b85f999bce473556e" {
+  zone_id = "dab8f099a595da90a93887a6b1984eb5"
+  name    = "olender.io"
+  type    = "TXT"
+  ttl     = "1"
+  proxied = "false"
+  value   = "v=spf1 include:mailgun.org ~all"
 }
 
 resource "cloudflare_record" "TXT_olender_io_7731ed366b8b324b85f999bce473556e" {
