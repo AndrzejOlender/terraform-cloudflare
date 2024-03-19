@@ -1,6 +1,6 @@
 resource "cloudflare_record" "A_theshine_shoes_3241deb5a27491a5f5756a25d091e39b" {
   zone_id = "b71a5a2f2e1b2556776903b597d788f4"
-  name    = "theshine_shoes"
+  name    = "theshine.shoes"
   type    = "A"
   ttl     = "1"
   proxied = "true"
@@ -18,7 +18,7 @@ resource "cloudflare_record" "A_www_theshine_shoes_12ef522194807b2535cd212304977
 
 resource "cloudflare_record" "MX_theshine_shoes_8ede0bb9917ae57706b25a442d7c48f4" {
   zone_id  = "b71a5a2f2e1b2556776903b597d788f4"
-  name     = "theshine_shoes"
+  name     = "theshine.shoes"
   type     = "MX"
   ttl      = "1"
   proxied  = "false"
@@ -28,7 +28,7 @@ resource "cloudflare_record" "MX_theshine_shoes_8ede0bb9917ae57706b25a442d7c48f4
 
 resource "cloudflare_record" "TXT_theshine_shoes_7731ed366b8b3c4b85f999bce473556e" {
   zone_id = "b71a5a2f2e1b2556776903b597d788f4"
-  name    = "theshine_shoes"
+  name    = "theshine.shoes"
   type    = "TXT"
   ttl     = "1"
   proxied = "false"
@@ -37,7 +37,7 @@ resource "cloudflare_record" "TXT_theshine_shoes_7731ed366b8b3c4b85f999bce473556
 
 resource "cloudflare_record" "TXT_theshine_shoes_7731ed366b8b3c4b85f999bc4473556e" {
   zone_id = "b71a5a2f2e1b2556776903b597d788f4"
-  name    = "_acme-challenge.dns.theshine_shoes"
+  name    = "_acme-challenge.dns.theshine.shoes"
   type    = "TXT"
   ttl     = "1"
   proxied = "false"
