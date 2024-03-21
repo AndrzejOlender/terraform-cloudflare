@@ -55,7 +55,7 @@ resource "cloudflare_record" "TXT_theshine_shoes_7731fd466b8b3c4b85f999bce473556
 
 resource "cloudflare_record" "TXT_theshine_shoes_dkim" {
   zone_id = "b71a5a2f2e1b2556776903b597d788f4"
-  name    = "email._domainkey.theshine_shoes"
+  name    = "s1._domainkey.theshine.shoes"
   type    = "TXT"
   ttl     = "1"
   proxied = "false"
