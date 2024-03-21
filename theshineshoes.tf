@@ -44,3 +44,47 @@ resource "cloudflare_record" "TXT_theshine_shoes_7731ed366b8b3c4b85f999bc4473556
   value   = "CGiRLq9acUSOwgRsE1pR_oUJMghulYs86Z4Xb1LSceo"
 }
 
+resource "cloudflare_record" "TXT_theshine_shoes_7731fd466b8b3c4b85f999bce473556e" {
+  zone_id = "b71a5a2f2e1b2556776903b597d788f4"
+  name    = "theshine.shoes"
+  type    = "TXT"
+  ttl     = "1"
+  proxied = "false"
+  value   = "v=spf1 include:mailgun.org ~all"
+}
+
+resource "cloudflare_record" "TXT_theshine_shoes_dkim" {
+  zone_id = "b71a5a2f2e1b2556776903b597d788f4"
+  name    = "email._domainkey.theshine_shoes"
+  type    = "TXT"
+  ttl     = "1"
+  proxied = "false"
+  value   = "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC2WV8u5GqBh+UmDWraiWx7I/strQdzaR5XdcHhXzRDt2vOQ8s5MRLwMfad95dMKMMIv1GtmyHsR3mbMNO0evX+mxqcZ5Ok2EeGy2bnrhjEXug7AgjcpXFrljZR5G4eyZ/i33y+YIdL19uRlsIR3e4wYr7bHUERygwYCrFXf8j06wIDAQAB"
+}
+
+resource "cloudflare_record" "TXT_theshine_shoes_cname" {
+  zone_id = "b71a5a2f2e1b2556776903b597d788f4"
+  name    = "email.theshine.shoes"
+  type    = "CNAME"
+  ttl     = "1"
+  proxied = "false"
+  value   = "eu.mailgun.org"
+}
+
+resource "cloudflare_record" "TXT_theshine_shoes_7731ed366b8b324b85f999bce473556e" {
+  zone_id = "b71a5a2f2e1b2556776903b597d788f4"
+  name    = "theshine.shoes"
+  type    = "TXT"
+  ttl     = "1"
+  proxied = "false"
+  value   = "google-site-verification=nTsnlmREGdwd4AHLl-9OMG6AifRyjtkhxREWTnsFBZM"
+}
+
+resource "cloudflare_record" "TXT_theshine_shoes_7731ed36628b324b85f999bce463556e" {
+  zone_id = "b71a5a2f2e1b2556776903b597d788f4"
+  name    = "theshine.shoes"
+  type    = "TXT"
+  ttl     = "1"
+  proxied = "false"
+  value   = "v=DMARC1;  p=none; rua=mailto:0cbc6fc3b2e44070a3a9c56d1a2e64e1@dmarc-reports.cloudflare.net"
+}
