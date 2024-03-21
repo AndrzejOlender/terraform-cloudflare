@@ -26,6 +26,26 @@ resource "cloudflare_record" "MX_theshine_shoes_8ede0bb9917ae57706b25a442d7c48f4
   value    = "aspmx.l.google.com"
 }
 
+resource "cloudflare_record" "MX_theshine_shoes_8ede0bb99g7ae57706b25a442d7c48f4" {
+  zone_id  = "b71a5a2f2e1b2556776903b597d788f4"
+  name     = "theshine.shoes"
+  type     = "MX"
+  ttl      = "1"
+  proxied  = "false"
+  priority = "10"
+  value    = "mxa.eu.mailgun.org"
+}
+
+resource "cloudflare_record" "MX_theshine_shoes_8ede0bb99g7ae57706b25a442d7g48f4" {
+  zone_id  = "b71a5a2f2e1b2556776903b597d788f4"
+  name     = "theshine.shoes"
+  type     = "MX"
+  ttl      = "1"
+  proxied  = "false"
+  priority = "10"
+  value    = "mxb.eu.mailgun.org"
+}
+
 resource "cloudflare_record" "TXT_theshine_shoes_7731ed366b8b3c4b85f999bce473556e" {
   zone_id = "b71a5a2f2e1b2556776903b597d788f4"
   name    = "theshine.shoes"
