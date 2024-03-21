@@ -59,8 +59,9 @@ resource "cloudflare_record" "TXT_theshine_shoes_dkim" {
   type    = "TXT"
   ttl     = "1"
   proxied = "false"
-  value   = "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC2WV8u5GqBh+UmDWraiWx7I/strQdzaR5XdcHhXzRDt2vOQ8s5MRLwMfad95dMKMMIv1GtmyHsR3mbMNO0evX+mxqcZ5Ok2EeGy2bnrhjEXug7AgjcpXFrljZR5G4eyZ/i33y+YIdL19uRlsIR3e4wYr7bHUERygwYCrFXf8j06wIDAQAB"
+  value   = "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC4sf993Dn/aoh/FHB121nrxKwRfolsG0HQZP6gwLmUWg1Sm82s5waIT4nppAIF7CbpOatgqiQuZ1N5kEvF1CFOORPCeXHAQbdNWip8TejJ+5o1a3BYwpHCXnG8jX2xz0/BLLZ6gKH2fXlaI1D+d3IFPiY789M/RiA2ud6yAgLnHQIDAQAB"
 }
+
 
 resource "cloudflare_record" "TXT_theshine_shoes_cname" {
   zone_id = "b71a5a2f2e1b2556776903b597d788f4"
