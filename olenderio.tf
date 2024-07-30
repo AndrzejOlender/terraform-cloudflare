@@ -10,10 +10,10 @@ resource "cloudflare_record" "A_olender_io_3241deb5a27491a5f5756a25d091e39b" {
 resource "cloudflare_record" "A_www_olender_io_12ef522194807b2535cd212304977146" {
   zone_id = "dab8f099a595da90a93887a6b1984eb5"
   name    = "www"
-  type    = "A"
+  type    = "CNAME"
   ttl     = "1"
   proxied = "true"
-  value   = "185.199.108.153"
+  value   = "andrzejolender.github.io"
 }
 
 resource "cloudflare_record" "A_argocd_olender_io_12ef522394407b2535cd212304977146" {
