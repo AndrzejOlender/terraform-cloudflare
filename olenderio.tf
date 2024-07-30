@@ -4,7 +4,7 @@ resource "cloudflare_record" "A_olender_io_3241deb5a27491a5f5756a25d091e39b" {
   type    = "A"
   ttl     = "1"
   proxied = "true"
-  value   = "176.97.53.34"
+  value   = "185.199.108.153"
 }
 
 resource "cloudflare_record" "A_www_olender_io_12ef522194807b2535cd212304977146" {
@@ -13,7 +13,7 @@ resource "cloudflare_record" "A_www_olender_io_12ef522194807b2535cd212304977146"
   type    = "A"
   ttl     = "1"
   proxied = "true"
-  value   = "176.97.53.34"
+  value   = "185.199.108.153"
 }
 
 resource "cloudflare_record" "A_argocd_olender_io_12ef522394407b2535cd212304977146" {
