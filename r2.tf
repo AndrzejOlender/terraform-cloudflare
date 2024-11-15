@@ -58,3 +58,6 @@ resource "aws_s3_bucket" "k3s-nuc-longhorn" {
   bucket = "k3s-nuc-longhorn"
 }
 
+resource "aws_s3_bucket" "cdn-olenderio" {
+  bucket = "cdn-olenderio"
+}
