@@ -62,3 +62,12 @@ resource "cloudflare_record" "TXT_olender_me_7731ed366b8b3c4b85f999bc4473556e" {
   value   = "CGiRLq9acUSOwgRsE1pR_oUJMghulYs86Z4Xb1LSceo"
 }
 
+resource "cloudflare_record" "TXT_olender_me_7731ed356b8b3c4h85f999bc4473556e" {
+  zone_id = "cc48edd90525ea1c42435ecc79d83b66"
+  name    = "olender.me"
+  type    = "TXT"
+  ttl     = "1"
+  proxied = "false"
+  value   = "mojecertpl-site-verification-floPXegJjjepVETeW7SlGFlPqiBasWHj"
+}
+

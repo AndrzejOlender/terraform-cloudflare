@@ -109,3 +109,12 @@ resource "cloudflare_record" "TXT_theshine_shoes_7731ed36628b324b85f999bce463556
   proxied = "false"
   value   = "v=DMARC1;  p=none; rua=mailto:0cbc6fc3b2e44070a3a9c56d1a2e64e1@dmarc-reports.cloudflare.net"
 }
+
+resource "cloudflare_record" "TXT_theshine_shoes_7732ed36668b324b85f999bce463556e" {
+  zone_id = "b71a5a2f2e1b2556776903b597d788f4"
+  name    = "theshine.shoes"
+  type    = "TXT"
+  ttl     = "1"
+  proxied = "false"
+  value   = "mojecertpl-site-verification-floPXegJjjepVETeW7SlGFlPqiBasWHj"
+}
