@@ -25,6 +25,15 @@ resource "cloudflare_record" "A_freshrss_olender_io_12ef522394404b2535cd25230497
   value   = "176.97.53.34"
 }
 
+resource "cloudflare_record" "A_qdrant_olender_io_12ef522394404b2535cd252304977142" {
+  zone_id = "dab8f099a595da90a93887a6b1984eb5"
+  name    = "qdrant"
+  type    = "A"
+  ttl     = "1"
+  proxied = "true"
+  value   = "176.97.53.34"
+}
+
 resource "cloudflare_record" "A_umami_olender_io_12eg522394404b2335cd252304977145" {
   zone_id = "dab8f099a595da90a93887a6b1984eb5"
   name    = "umami"
