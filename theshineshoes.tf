@@ -52,7 +52,7 @@ resource "cloudflare_record" "TXT_theshine_shoes_7731ed366b8b3c4b85f999bce473556
   type    = "TXT"
   ttl     = "1"
   proxied = "false"
-  value   = "v=spf1 mx a include:_spf.emaillabs.net.pl ~all"
+  value   = "v=spf1 include:_spf.google.com ~all"
 }
 
 resource "cloudflare_record" "TXT_theshine_shoes_7731ed366b8b3c4b85f999bc4473556e" {
