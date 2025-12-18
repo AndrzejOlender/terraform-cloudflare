@@ -7,7 +7,7 @@ terraform {
     }
     aws = {
       source = "hashicorp/aws"
-      version = "6.21.0"
+      version = "6.27.0"
     }
   }
   backend "remote" {
