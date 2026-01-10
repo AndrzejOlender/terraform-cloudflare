@@ -4,7 +4,7 @@ resource "cloudflare_record" "A_theshine_shoes_3241deb5a27491a5f5756a25d091e39b"
   type    = "A"
   ttl     = "1"
   proxied = "true"
-  value   = "176.97.53.34"
+  value   = "176.97.52.155"
 }
 
 resource "cloudflare_record" "A_www_theshine_shoes_12ef522194807b2535cd212304977146" {
@@ -13,7 +13,7 @@ resource "cloudflare_record" "A_www_theshine_shoes_12ef522194807b2535cd212304977
   type    = "A"
   ttl     = "1"
   proxied = "true"
-  value   = "176.97.53.34"
+  value   = "176.97.52.155"
 }
 
 resource "cloudflare_record" "MX_theshine_shoes_8ede0bb9917ae57706b25a442d7c48f4" {

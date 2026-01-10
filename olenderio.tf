@@ -4,7 +4,7 @@ resource "cloudflare_record" "A_olender_io_3241deb5a27491a5f5756a25d091e39b" {
   type    = "A"
   ttl     = "1"
   proxied = "true"
-  value   = "176.97.53.34"
+  value   = "176.97.52.155"
 }
 
 resource "cloudflare_record" "A_argocd_olender_io_12ef522394407b2535cd212304977146" {
@@ -13,7 +13,7 @@ resource "cloudflare_record" "A_argocd_olender_io_12ef522394407b2535cd2123049771
   type    = "A"
   ttl     = "1"
   proxied = "true"
-  value   = "176.97.53.34"
+  value   = "176.97.52.155"
 }
 
 resource "cloudflare_record" "A_freshrss_olender_io_12ef522394404b2535cd252304977146" {
@@ -22,7 +22,7 @@ resource "cloudflare_record" "A_freshrss_olender_io_12ef522394404b2535cd25230497
   type    = "A"
   ttl     = "1"
   proxied = "true"
-  value   = "176.97.53.34"
+  value   = "176.97.52.155"
 }
 
 resource "cloudflare_record" "A_qdrant_olender_io_12ef522394404b2535cd252304977142" {
@@ -31,7 +31,7 @@ resource "cloudflare_record" "A_qdrant_olender_io_12ef522394404b2535cd2523049771
   type    = "A"
   ttl     = "1"
   proxied = "true"
-  value   = "176.97.53.34"
+  value   = "176.97.52.155"
 }
 
 resource "cloudflare_record" "A_umami_olender_io_12eg522394404b2335cd252304977145" {
@@ -40,7 +40,7 @@ resource "cloudflare_record" "A_umami_olender_io_12eg522394404b2335cd25230497714
   type    = "A"
   ttl     = "1"
   proxied = "true"
-  value   = "176.97.53.34"
+  value   = "176.97.52.155"
 }
 
 resource "cloudflare_record" "A_argocd_olender_io_12ef4223f4407b2535cd212304977146" {
@@ -49,7 +49,7 @@ resource "cloudflare_record" "A_argocd_olender_io_12ef4223f4407b2535cd2123049771
   type    = "A"
   ttl     = "1"
   proxied = "true"
-  value   = "176.97.53.34"
+  value   = "176.97.52.155"
 }
 
 resource "cloudflare_record" "A_argocd_olender_io_12eg6223f4407b2535cd212304977146" {
@@ -58,7 +58,7 @@ resource "cloudflare_record" "A_argocd_olender_io_12eg6223f4407b2535cd2123049771
   type    = "A"
   ttl     = "1"
   proxied = "false"
-  value   = "176.97.53.34"
+  value   = "176.97.52.155"
 }
 
 resource "cloudflare_record" "MX_olender_io_8ede0bb9917ae57706b25a442d7c48f4" {
