@@ -71,3 +71,17 @@ resource "cloudflare_record" "TXT_olender_me_7731ed356b8b3c4h85f999bc4473556e" {
   value   = "mojecertpl-site-verification-floPXegJjjepVETeW7SlGFlPqiBasWHj"
 }
 
+# Internal homelab services exposed by the k3s internal Gateway (l7-internal).
+# Wildcard only on purpose: individual service names stay non-enumerable in public DNS.
+# Must stay DNS-only (proxied = false) - the target is an RFC1918 address that is only
+# reachable from the LAN. Public resolution of a private IP is what makes these names
+# work while Cloudflare WARP is connected (WARP forces DoH, so LAN resolvers are bypassed).
+resource "cloudflare_record" "A_wildcard_lan_olender_me" {
+  zone_id = "cc48edd90525ea1c42435ecc79d83b66"
+  name    = "*.lan"
+  type    = "A"
+  ttl     = "1"
+  proxied = "false"
+  value   = "192.168.3.2"
+}
+
