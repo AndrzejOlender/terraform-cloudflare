@@ -85,3 +85,14 @@ resource "cloudflare_record" "A_wildcard_lan_olender_me" {
   value   = "192.168.3.2"
 }
 
+# Mail server hostname; target of the PTR for 176.97.52.155 (FCrDNS).
+# Must stay DNS-only: Cloudflare does not proxy SMTP/IMAP.
+resource "cloudflare_record" "A_mail_olender_me" {
+  zone_id = "cc48edd90525ea1c42435ecc79d83b66"
+  name    = "mail"
+  type    = "A"
+  ttl     = "1"
+  proxied = "false"
+  value   = "176.97.52.155"
+}
+
