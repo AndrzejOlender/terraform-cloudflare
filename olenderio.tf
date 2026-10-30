@@ -52,15 +52,6 @@ resource "cloudflare_record" "A_argocd_olender_io_12ef4223f4407b2535cd2123049771
   value   = "176.97.52.155"
 }
 
-resource "cloudflare_record" "A_argocd_olender_io_12eg6223f4407b2535cd212304977146" {
-  zone_id = "dab8f099a595da90a93887a6b1984eb5"
-  name    = "shlink"
-  type    = "A"
-  ttl     = "1"
-  proxied = "false"
-  value   = "176.97.52.155"
-}
-
 resource "cloudflare_record" "TXT_olender_io_7731fd466b8b3c4b85f999bce473556e" {
   zone_id = "dab8f099a595da90a93887a6b1984eb5"
   name    = "olender.io"
