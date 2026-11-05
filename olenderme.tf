@@ -96,3 +96,13 @@ resource "cloudflare_record" "A_mail_olender_me" {
   value   = "176.97.52.155"
 }
 
+
+# DMARC in monitoring mode, same policy and report address as olender.io.
+resource "cloudflare_record" "TXT_olender_me_dmarc" {
+  zone_id = "cc48edd90525ea1c42435ecc79d83b66"
+  name    = "_dmarc"
+  type    = "TXT"
+  ttl     = "1"
+  proxied = "false"
+  value   = "v=DMARC1;  p=none; rua=mailto:0cbc6fc3b2e44070a3a9c56d1a2e64e1@dmarc-reports.cloudflare.net"
+}
