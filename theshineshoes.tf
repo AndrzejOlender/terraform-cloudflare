@@ -31,27 +31,9 @@ resource "cloudflare_record" "TXT_theshine_shoes_7731fd466b8b3c4b85f999bce473556
   type    = "TXT"
   ttl     = "1"
   proxied = "false"
-  value   = "v=spf1 ip4:176.97.52.155 include:mailgun.org ~all"
+  value   = "v=spf1 ip4:176.97.52.155 ~all"
 }
 
-resource "cloudflare_record" "TXT_theshine_shoes_dkim" {
-  zone_id = "b71a5a2f2e1b2556776903b597d788f4"
-  name    = "s1._domainkey.theshine.shoes"
-  type    = "TXT"
-  ttl     = "1"
-  proxied = "false"
-  value   = "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC4sf993Dn/aoh/FHB121nrxKwRfolsG0HQZP6gwLmUWg1Sm82s5waIT4nppAIF7CbpOatgqiQuZ1N5kEvF1CFOORPCeXHAQbdNWip8TejJ+5o1a3BYwpHCXnG8jX2xz0/BLLZ6gKH2fXlaI1D+d3IFPiY789M/RiA2ud6yAgLnHQIDAQAB"
-}
-
-
-resource "cloudflare_record" "TXT_theshine_shoes_cname" {
-  zone_id = "b71a5a2f2e1b2556776903b597d788f4"
-  name    = "email.theshine.shoes"
-  type    = "CNAME"
-  ttl     = "1"
-  proxied = "false"
-  value   = "eu.mailgun.org"
-}
 
 resource "cloudflare_record" "TXT_theshine_shoes_7731ed366b8b324b85f999bce473556e" {
   zone_id = "b71a5a2f2e1b2556776903b597d788f4"
@@ -81,7 +63,7 @@ resource "cloudflare_record" "TXT_theshine_shoes_7732ed36668b324b85f999bce463556
 }
 
 # Self-hosted mail (Stalwart, k3s-nuc ns mail): catch-all to andrzej@olender.io.
-# Outbound relays via Mailgun EU, hence include:mailgun.org in SPF above.
+# Outbound mail is delivered directly from 176.97.52.155 (SPF ip4 above).
 resource "cloudflare_record" "MX_theshine_shoes_stalwart" {
   zone_id  = "b71a5a2f2e1b2556776903b597d788f4"
   name     = "theshine.shoes"

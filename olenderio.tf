@@ -49,25 +49,7 @@ resource "cloudflare_record" "TXT_olender_io_7731fd466b8b3c4b85f999bce473556e" {
   type    = "TXT"
   ttl     = "1"
   proxied = "false"
-  value   = "v=spf1 ip4:176.97.52.155 include:mailgun.org ~all"
-}
-
-resource "cloudflare_record" "TXT_olender_io_dkim" {
-  zone_id = "dab8f099a595da90a93887a6b1984eb5"
-  name    = "email._domainkey.olender.io"
-  type    = "TXT"
-  ttl     = "1"
-  proxied = "false"
-  value   = "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC2WV8u5GqBh+UmDWraiWx7I/strQdzaR5XdcHhXzRDt2vOQ8s5MRLwMfad95dMKMMIv1GtmyHsR3mbMNO0evX+mxqcZ5Ok2EeGy2bnrhjEXug7AgjcpXFrljZR5G4eyZ/i33y+YIdL19uRlsIR3e4wYr7bHUERygwYCrFXf8j06wIDAQAB"
-}
-
-resource "cloudflare_record" "TXT_olender_io_cname" {
-  zone_id = "dab8f099a595da90a93887a6b1984eb5"
-  name    = "email.olender.io"
-  type    = "CNAME"
-  ttl     = "1"
-  proxied = "false"
-  value   = "eu.mailgun.org"
+  value   = "v=spf1 ip4:176.97.52.155 ~all"
 }
 
 resource "cloudflare_record" "TXT_olender_io_7731ed366b8b324b85f999bce473556e" {
@@ -98,7 +80,7 @@ resource "cloudflare_record" "TXT_olender_io_7732ed36628h324b85f999bce463556e" {
 }
 
 # Self-hosted mail (Stalwart, k3s-nuc ns mail). Inbound MX -> mail.olender.me;
-# outbound relays via Mailgun EU, hence include:mailgun.org in SPF above.
+# outbound is delivered directly from 176.97.52.155 (SPF ip4 above).
 resource "cloudflare_record" "MX_olender_io_stalwart" {
   zone_id  = "dab8f099a595da90a93887a6b1984eb5"
   name     = "olender.io"
