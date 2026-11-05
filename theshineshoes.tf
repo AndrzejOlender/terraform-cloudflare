@@ -110,3 +110,13 @@ resource "cloudflare_record" "TXT_theshine_shoes_dkim_stalwart_ed25519" {
   proxied = "false"
   value   = "v=DKIM1; k=ed25519; h=sha256; p=MgzO2pxbe8LgskCCvIt4H6NXnCPki66wD9dcYeA1Q5M="
 }
+
+# DMARC in monitoring mode, same policy and report address as olender.io.
+resource "cloudflare_record" "TXT_theshine_shoes_dmarc" {
+  zone_id = "b71a5a2f2e1b2556776903b597d788f4"
+  name    = "_dmarc"
+  type    = "TXT"
+  ttl     = "1"
+  proxied = "false"
+  value   = "v=DMARC1;  p=none; rua=mailto:0cbc6fc3b2e44070a3a9c56d1a2e64e1@dmarc-reports.cloudflare.net"
+}
