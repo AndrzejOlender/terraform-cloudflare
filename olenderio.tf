@@ -67,7 +67,7 @@ resource "cloudflare_record" "TXT_olender_io_7731ed36628b324b85f999bce463556e" {
   type    = "TXT"
   ttl     = "1"
   proxied = "false"
-  value   = "v=DMARC1;  p=none; rua=mailto:0cbc6fc3b2e44070a3a9c56d1a2e64e1@dmarc-reports.cloudflare.net"
+  value   = "v=DMARC1;  p=quarantine; rua=mailto:0cbc6fc3b2e44070a3a9c56d1a2e64e1@dmarc-reports.cloudflare.net"
 }
 
 resource "cloudflare_record" "TXT_olender_io_7732ed36628h324b85f999bce463556e" {
