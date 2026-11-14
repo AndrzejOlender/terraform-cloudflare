@@ -94,7 +94,7 @@ resource "cloudflare_record" "TXT_olender_me_dmarc" {
   type    = "TXT"
   ttl     = "1"
   proxied = "false"
-  value   = "v=DMARC1;  p=quarantine; rua=mailto:0cbc6fc3b2e44070a3a9c56d1a2e64e1@dmarc-reports.cloudflare.net"
+  value   = "v=DMARC1;  p=quarantine; rua=mailto:c2273b16a9ae49a6ad3eb15e23ad8c69@dmarc-reports.cloudflare.net,mailto:0cbc6fc3b2e44070a3a9c56d1a2e64e1@dmarc-reports.cloudflare.net"
 }
 
 # Self-hosted mail (Stalwart, k3s-nuc ns mail): catch-all to andrzej@olender.io.

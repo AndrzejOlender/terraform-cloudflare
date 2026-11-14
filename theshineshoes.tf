@@ -91,5 +91,5 @@ resource "cloudflare_record" "TXT_theshine_shoes_dmarc" {
   type    = "TXT"
   ttl     = "1"
   proxied = "false"
-  value   = "v=DMARC1;  p=quarantine; rua=mailto:0cbc6fc3b2e44070a3a9c56d1a2e64e1@dmarc-reports.cloudflare.net"
+  value   = "v=DMARC1;  p=quarantine; rua=mailto:039719a1499c4e1e85300c6f3889bdcf@dmarc-reports.cloudflare.net,mailto:0cbc6fc3b2e44070a3a9c56d1a2e64e1@dmarc-reports.cloudflare.net"
 }
