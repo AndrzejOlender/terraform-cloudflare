@@ -31,7 +31,7 @@ resource "cloudflare_record" "TXT_theshine_shoes_7731fd466b8b3c4b85f999bce473556
   type    = "TXT"
   ttl     = "1"
   proxied = "false"
-  value   = "v=spf1 ip4:176.97.52.155 ~all"
+  value   = "v=spf1 ip4:176.97.52.155 -all"
 }
 
 

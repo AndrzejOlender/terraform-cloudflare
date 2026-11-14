@@ -49,7 +49,7 @@ resource "cloudflare_record" "TXT_olender_io_7731fd466b8b3c4b85f999bce473556e" {
   type    = "TXT"
   ttl     = "1"
   proxied = "false"
-  value   = "v=spf1 ip4:176.97.52.155 ~all"
+  value   = "v=spf1 ip4:176.97.52.155 -all"
 }
 
 resource "cloudflare_record" "TXT_olender_io_7731ed366b8b324b85f999bce473556e" {
