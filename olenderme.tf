@@ -1,64 +1,64 @@
-resource "cloudflare_record" "A_home_olender_me_4826eff93cd0e884f59153cd3b4e6759" {
+resource "cloudflare_dns_record" "A_home_olender_me_4826eff93cd0e884f59153cd3b4e6759" {
   zone_id = "cc48edd90525ea1c42435ecc79d83b66"
-  name    = "home"
+  name    = "home.olender.me"
   type    = "A"
-  ttl     = "1"
-  proxied = "true"
-  value   = "176.97.52.155"
+  ttl     = 1
+  proxied = true
+  content = "176.97.52.155"
 }
 
-resource "cloudflare_record" "A_home_olender_me_4826egh93cd0e884f59153cd3b4e6759" {
+resource "cloudflare_dns_record" "A_home_olender_me_4826egh93cd0e884f59153cd3b4e6759" {
   zone_id = "cc48edd90525ea1c42435ecc79d83b66"
-  name    = "s"
+  name    = "s.olender.me"
   type    = "A"
-  ttl     = "1"
-  proxied = "true"
-  value   = "176.97.52.155"
+  ttl     = 1
+  proxied = true
+  content = "176.97.52.155"
 }
 
-resource "cloudflare_record" "A_olender_me_3241deb5a27491a5f5756a25d091e39b" {
+resource "cloudflare_dns_record" "A_olender_me_3241deb5a27491a5f5756a25d091e39b" {
   zone_id = "cc48edd90525ea1c42435ecc79d83b66"
   name    = "olender.me"
   type    = "A"
-  ttl     = "1"
-  proxied = "true"
-  value   = "176.97.52.155"
+  ttl     = 1
+  proxied = true
+  content = "176.97.52.155"
 }
 
-resource "cloudflare_record" "A_www_olender_me_12ef522194807b2535cd212304977146" {
+resource "cloudflare_dns_record" "A_www_olender_me_12ef522194807b2535cd212304977146" {
   zone_id = "cc48edd90525ea1c42435ecc79d83b66"
-  name    = "www"
+  name    = "www.olender.me"
   type    = "A"
-  ttl     = "1"
-  proxied = "true"
-  value   = "176.97.52.155"
+  ttl     = 1
+  proxied = true
+  content = "176.97.52.155"
 }
 
-resource "cloudflare_record" "TXT_olender_me_7731ed366b8b3c4b85f999bce473556e" {
+resource "cloudflare_dns_record" "TXT_olender_me_7731ed366b8b3c4b85f999bce473556e" {
   zone_id = "cc48edd90525ea1c42435ecc79d83b66"
   name    = "olender.me"
   type    = "TXT"
-  ttl     = "1"
-  proxied = "false"
-  value   = "v=spf1 ip4:176.97.52.155 -all"
+  ttl     = 1
+  proxied = false
+  content = "v=spf1 ip4:176.97.52.155 -all"
 }
 
-resource "cloudflare_record" "TXT_olender_me_7731ed366b8b3c4b85f999bc4473556e" {
+resource "cloudflare_dns_record" "TXT_olender_me_7731ed366b8b3c4b85f999bc4473556e" {
   zone_id = "cc48edd90525ea1c42435ecc79d83b66"
   name    = "_acme-challenge.dns.olender.me"
   type    = "TXT"
-  ttl     = "1"
-  proxied = "false"
-  value   = "CGiRLq9acUSOwgRsE1pR_oUJMghulYs86Z4Xb1LSceo"
+  ttl     = 1
+  proxied = false
+  content = "CGiRLq9acUSOwgRsE1pR_oUJMghulYs86Z4Xb1LSceo"
 }
 
-resource "cloudflare_record" "TXT_olender_me_7731ed356b8b3c4h85f999bc4473556e" {
+resource "cloudflare_dns_record" "TXT_olender_me_7731ed356b8b3c4h85f999bc4473556e" {
   zone_id = "cc48edd90525ea1c42435ecc79d83b66"
   name    = "olender.me"
   type    = "TXT"
-  ttl     = "1"
-  proxied = "false"
-  value   = "mojecertpl-site-verification-floPXegJjjepVETeW7SlGFlPqiBasWHj"
+  ttl     = 1
+  proxied = false
+  content = "mojecertpl-site-verification-floPXegJjjepVETeW7SlGFlPqiBasWHj"
 }
 
 # Internal homelab services exposed by the k3s internal Gateway (l7-internal).
@@ -66,64 +66,64 @@ resource "cloudflare_record" "TXT_olender_me_7731ed356b8b3c4h85f999bc4473556e" {
 # Must stay DNS-only (proxied = false) - the target is an RFC1918 address that is only
 # reachable from the LAN. Public resolution of a private IP is what makes these names
 # work while Cloudflare WARP is connected (WARP forces DoH, so LAN resolvers are bypassed).
-resource "cloudflare_record" "A_wildcard_lan_olender_me" {
+resource "cloudflare_dns_record" "A_wildcard_lan_olender_me" {
   zone_id = "cc48edd90525ea1c42435ecc79d83b66"
-  name    = "*.lan"
+  name    = "*.lan.olender.me"
   type    = "A"
-  ttl     = "1"
-  proxied = "false"
-  value   = "192.168.3.2"
+  ttl     = 1
+  proxied = false
+  content = "192.168.3.2"
 }
 
 # Mail server hostname; target of the PTR for 176.97.52.155 (FCrDNS).
 # Must stay DNS-only: Cloudflare does not proxy SMTP/IMAP.
-resource "cloudflare_record" "A_mail_olender_me" {
+resource "cloudflare_dns_record" "A_mail_olender_me" {
   zone_id = "cc48edd90525ea1c42435ecc79d83b66"
-  name    = "mail"
+  name    = "mail.olender.me"
   type    = "A"
-  ttl     = "1"
-  proxied = "false"
-  value   = "176.97.52.155"
+  ttl     = 1
+  proxied = false
+  content = "176.97.52.155"
 }
 
 
 # DMARC in monitoring mode, same policy and report address as olender.io.
-resource "cloudflare_record" "TXT_olender_me_dmarc" {
+resource "cloudflare_dns_record" "TXT_olender_me_dmarc" {
   zone_id = "cc48edd90525ea1c42435ecc79d83b66"
-  name    = "_dmarc"
+  name    = "_dmarc.olender.me"
   type    = "TXT"
-  ttl     = "1"
-  proxied = "false"
-  value   = "v=DMARC1;  p=quarantine; rua=mailto:c2273b16a9ae49a6ad3eb15e23ad8c69@dmarc-reports.cloudflare.net,mailto:0cbc6fc3b2e44070a3a9c56d1a2e64e1@dmarc-reports.cloudflare.net"
+  ttl     = 1
+  proxied = false
+  content = "v=DMARC1;  p=quarantine; rua=mailto:c2273b16a9ae49a6ad3eb15e23ad8c69@dmarc-reports.cloudflare.net,mailto:0cbc6fc3b2e44070a3a9c56d1a2e64e1@dmarc-reports.cloudflare.net"
 }
 
 # Self-hosted mail (Stalwart, k3s-nuc ns mail): catch-all to andrzej@olender.io.
 # Replaces Google Workspace; outbound is delivered directly from 176.97.52.155.
-resource "cloudflare_record" "MX_olender_me_stalwart" {
+resource "cloudflare_dns_record" "MX_olender_me_stalwart" {
   zone_id  = "cc48edd90525ea1c42435ecc79d83b66"
   name     = "olender.me"
   type     = "MX"
-  ttl      = "1"
-  proxied  = "false"
-  priority = "10"
-  value    = "mail.olender.me"
+  ttl      = 1
+  proxied  = false
+  priority = 10
+  content  = "mail.olender.me"
 }
 
 # DKIM keys generated by Stalwart (Domain olender.me, dkimManagement Automatic).
-resource "cloudflare_record" "TXT_olender_me_dkim_stalwart_rsa" {
+resource "cloudflare_dns_record" "TXT_olender_me_dkim_stalwart_rsa" {
   zone_id = "cc48edd90525ea1c42435ecc79d83b66"
-  name    = "v1-rsa-20261107._domainkey"
+  name    = "v1-rsa-20261107._domainkey.olender.me"
   type    = "TXT"
-  ttl     = "1"
-  proxied = "false"
-  value   = "v=DKIM1; k=rsa; h=sha256; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwDbRBsQwJjoxNFXukr8/1CzJAuohyoKOA5fiTxCNzJuUvlxi/gAy9XnhWATPpqFVEbR+eyak6sLPgUXzb+BJ54521Vv/d38gjNgvw2p/BFM6RdzHSSu7IdyTYA2FZMe7piixD9PzFkUrgBpMYpxsW+iTuFaeYXaN9tzgCEeUhbs0ESwm8K+1pvkBk61ArGqGr+EfGq+UV0cGL1+b3vkonRTQtCuYTJh9k2cwSRSPXgdIVPN+7BfFOrB/Lmw8Ezrz01QDKl9oVSl4THWl+BI6d8t1STBDDvLqXBnk1JmobEgJ2oi2zIdV20LF0gy+XQItFXw7MnolV039sEFjKcjfXwIDAQAB"
+  ttl     = 1
+  proxied = false
+  content = "v=DKIM1; k=rsa; h=sha256; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwDbRBsQwJjoxNFXukr8/1CzJAuohyoKOA5fiTxCNzJuUvlxi/gAy9XnhWATPpqFVEbR+eyak6sLPgUXzb+BJ54521Vv/d38gjNgvw2p/BFM6RdzHSSu7IdyTYA2FZMe7piixD9PzFkUrgBpMYpxsW+iTuFaeYXaN9tzgCEeUhbs0ESwm8K+1pvkBk61ArGqGr+EfGq+UV0cGL1+b3vkonRTQtCuYTJh9k2cwSRSPXgdIVPN+7BfFOrB/Lmw8Ezrz01QDKl9oVSl4THWl+BI6d8t1STBDDvLqXBnk1JmobEgJ2oi2zIdV20LF0gy+XQItFXw7MnolV039sEFjKcjfXwIDAQAB"
 }
 
-resource "cloudflare_record" "TXT_olender_me_dkim_stalwart_ed25519" {
+resource "cloudflare_dns_record" "TXT_olender_me_dkim_stalwart_ed25519" {
   zone_id = "cc48edd90525ea1c42435ecc79d83b66"
-  name    = "v1-ed25519-20261107._domainkey"
+  name    = "v1-ed25519-20261107._domainkey.olender.me"
   type    = "TXT"
-  ttl     = "1"
-  proxied = "false"
-  value   = "v=DKIM1; k=ed25519; h=sha256; p=PPotDKJWiRyIMGUisJgczrYrXkiqdaC1u9QsWRjM8nk="
+  ttl     = 1
+  proxied = false
+  content = "v=DKIM1; k=ed25519; h=sha256; p=PPotDKJWiRyIMGUisJgczrYrXkiqdaC1u9QsWRjM8nk="
 }
