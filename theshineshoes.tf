@@ -31,7 +31,7 @@ resource "cloudflare_dns_record" "TXT_theshine_shoes_7731fd466b8b3c4b85f999bce47
   type    = "TXT"
   ttl     = 1
   proxied = false
-  content = "v=spf1 ip4:176.97.52.155 ~all"
+  content = "v=spf1 ip4:176.97.52.155 -all"
 }
 
 
@@ -42,15 +42,6 @@ resource "cloudflare_dns_record" "TXT_theshine_shoes_7731ed366b8b324b85f999bce47
   ttl     = 1
   proxied = false
   content = "google-site-verification=nTsnlmREGdwd4AHLl-9OMG6AifRyjtkhxREWTnsFBZM"
-}
-
-resource "cloudflare_dns_record" "TXT_theshine_shoes_7731ed36628b324b85f999bce463556e" {
-  zone_id = "b71a5a2f2e1b2556776903b597d788f4"
-  name    = "theshine.shoes"
-  type    = "TXT"
-  ttl     = 1
-  proxied = false
-  content = "v=DMARC1;  p=none; rua=mailto:0cbc6fc3b2e44070a3a9c56d1a2e64e1@dmarc-reports.cloudflare.net"
 }
 
 resource "cloudflare_dns_record" "TXT_theshine_shoes_7732ed36668b324b85f999bce463556e" {
@@ -100,5 +91,5 @@ resource "cloudflare_dns_record" "TXT_theshine_shoes_dmarc" {
   type    = "TXT"
   ttl     = 1
   proxied = false
-  content = "v=DMARC1;  p=none; rua=mailto:0cbc6fc3b2e44070a3a9c56d1a2e64e1@dmarc-reports.cloudflare.net"
+  content = "v=DMARC1;  p=quarantine; rua=mailto:039719a1499c4e1e85300c6f3889bdcf@dmarc-reports.cloudflare.net,mailto:0cbc6fc3b2e44070a3a9c56d1a2e64e1@dmarc-reports.cloudflare.net"
 }

@@ -40,7 +40,7 @@ resource "cloudflare_dns_record" "TXT_olender_me_7731ed366b8b3c4b85f999bce473556
   type    = "TXT"
   ttl     = 1
   proxied = false
-  content = "v=spf1 ip4:176.97.52.155 ~all"
+  content = "v=spf1 ip4:176.97.52.155 -all"
 }
 
 resource "cloudflare_dns_record" "TXT_olender_me_7731ed366b8b3c4b85f999bc4473556e" {
@@ -94,7 +94,7 @@ resource "cloudflare_dns_record" "TXT_olender_me_dmarc" {
   type    = "TXT"
   ttl     = 1
   proxied = false
-  content = "v=DMARC1;  p=none; rua=mailto:0cbc6fc3b2e44070a3a9c56d1a2e64e1@dmarc-reports.cloudflare.net"
+  content = "v=DMARC1;  p=quarantine; rua=mailto:c2273b16a9ae49a6ad3eb15e23ad8c69@dmarc-reports.cloudflare.net,mailto:0cbc6fc3b2e44070a3a9c56d1a2e64e1@dmarc-reports.cloudflare.net"
 }
 
 # Self-hosted mail (Stalwart, k3s-nuc ns mail): catch-all to andrzej@olender.io.

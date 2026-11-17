@@ -49,7 +49,7 @@ resource "cloudflare_dns_record" "TXT_olender_io_7731fd466b8b3c4b85f999bce473556
   type    = "TXT"
   ttl     = 1
   proxied = false
-  content = "v=spf1 ip4:176.97.52.155 ~all"
+  content = "v=spf1 ip4:176.97.52.155 -all"
 }
 
 resource "cloudflare_dns_record" "TXT_olender_io_7731ed366b8b324b85f999bce473556e" {
@@ -59,15 +59,6 @@ resource "cloudflare_dns_record" "TXT_olender_io_7731ed366b8b324b85f999bce473556
   ttl     = 1
   proxied = false
   content = "google-site-verification=nTsnlmREGdwd4AHLl-9OMG6AifRyjtkhxREWTnsFBZM"
-}
-
-resource "cloudflare_dns_record" "TXT_olender_io_7731ed36628b324b85f999bce463556e" {
-  zone_id = "dab8f099a595da90a93887a6b1984eb5"
-  name    = "olender.io"
-  type    = "TXT"
-  ttl     = 1
-  proxied = false
-  content = "v=DMARC1;  p=none; rua=mailto:0cbc6fc3b2e44070a3a9c56d1a2e64e1@dmarc-reports.cloudflare.net"
 }
 
 resource "cloudflare_dns_record" "TXT_olender_io_7732ed36628h324b85f999bce463556e" {

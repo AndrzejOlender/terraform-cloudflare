@@ -37,11 +37,6 @@ moved {
 }
 
 moved {
-  from = cloudflare_record.TXT_olender_io_7731ed36628b324b85f999bce463556e
-  to   = cloudflare_dns_record.TXT_olender_io_7731ed36628b324b85f999bce463556e
-}
-
-moved {
   from = cloudflare_record.TXT_olender_io_7732ed36628h324b85f999bce463556e
   to   = cloudflare_dns_record.TXT_olender_io_7732ed36628h324b85f999bce463556e
 }
@@ -149,11 +144,6 @@ moved {
 moved {
   from = cloudflare_record.TXT_theshine_shoes_7731ed366b8b324b85f999bce473556e
   to   = cloudflare_dns_record.TXT_theshine_shoes_7731ed366b8b324b85f999bce473556e
-}
-
-moved {
-  from = cloudflare_record.TXT_theshine_shoes_7731ed36628b324b85f999bce463556e
-  to   = cloudflare_dns_record.TXT_theshine_shoes_7731ed36628b324b85f999bce463556e
 }
 
 moved {
