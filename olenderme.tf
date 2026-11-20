@@ -75,6 +75,19 @@ resource "cloudflare_dns_record" "A_wildcard_lan_olender_me" {
   content = "192.168.3.2"
 }
 
+# frps reverse tunnel (k3s-nuc ns frp, VIP 192.168.3.5): SSH entrypoint for
+# herdr iOS (esky WARP poisons 192.168.1.0/24, so the tunnel rides the Cilium
+# BGP pool). Specific record beats the *.lan.olender.me wildcard above - the
+# gateway at 192.168.3.2 has no port 22 listener.
+resource "cloudflare_dns_record" "A_ssh_lan_olender_me" {
+  zone_id = "cc48edd90525ea1c42435ecc79d83b66"
+  name    = "ssh.lan.olender.me"
+  type    = "A"
+  ttl     = 1
+  proxied = false
+  content = "192.168.3.5"
+}
+
 # Mail server hostname; target of the PTR for 176.97.52.155 (FCrDNS).
 # Must stay DNS-only: Cloudflare does not proxy SMTP/IMAP.
 resource "cloudflare_dns_record" "A_mail_olender_me" {
